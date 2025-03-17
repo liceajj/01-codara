@@ -1,0 +1,85 @@
+.header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px; /* Mayor padding para un header más alto */
+  min-height: 80px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px; /* Ajusta la altura del logo según lo desees */
+  margin-right: 20px;
+}
+
+.menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-item {
+  color: #00a174;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Hover para menú: texto blanco y subrayado verde */
+.menu-item:hover {
+  color: white;
+  border-bottom: 2px solid #00a174;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.contact-link {
+  text-decoration: none;
+}
+
+.contact-button {
+  background-color: #00a174;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s ease;
+}
+
+.contact-button:hover {
+  opacity: 0.8;
+}
+
+.whatsapp-icon {
+  font-size: 18px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .header-left {
+    flex-direction: column;
+  }
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .header-right {
+    margin-top: 10px;
+  }
+}

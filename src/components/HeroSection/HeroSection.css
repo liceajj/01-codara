@@ -1,0 +1,170 @@
+/* Animación de entrada desde la derecha */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Contenedor principal: ocupa toda la pantalla y divide en dos columnas */
+.hero-section {
+  display: flex;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* Parte izquierda: alinea el contenido hacia arriba */
+.hero-text {
+  flex: 1;
+  display: flex;
+  align-items: flex-start; /* Alinea al inicio (arriba) */
+  justify-content: center;
+  padding-top: 40px;
+}
+
+/* Contenedor del título, subtítulo y botón */
+.text-container {
+  overflow: hidden; /* Evita mostrar contenido durante la animación */
+}
+
+/* Título en blanco, muy grande y animado */
+.hero-title {
+  color: white;
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
+  animation: slideIn 1s ease-out forwards;
+}
+
+/* Subtítulo en verde, más pequeño y animado con retraso */
+.hero-subtitle {
+  color: #00a174;
+  font-size: 2rem;
+  margin: 10px 0 0;
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+/* Botón de llamado a la acción */
+.cta-button {
+  background-color: #00a174;
+  color: black;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+  animation: slideIn 1s ease-out forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.8;
+}
+
+/* Contenedor derecho para la card */
+.hero-card-container {
+  flex: 1;
+  position: relative;
+}
+
+/* Card posicionada abajo a la derecha, más ancha y elevada */
+.hero-card {
+  position: absolute;
+  bottom: 120px;
+  right: 20px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Estilos para el texto de la card */
+.card-text p {
+  margin: 0;
+  font-size: 1rem;
+  color: white;
+}
+
+/* Estilos para la imagen dentro de la card (más grande) */
+.card-image img {
+  width: 120px;
+  height: auto;
+  border-radius: 4px;
+}
+
+/* ================= Responsive ================= */
+
+/* Para pantallas medianas (tablet) y móviles */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 10px;
+  }
+  
+  .hero-text {
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .cta-button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+  }
+  
+  /* Hacemos que el contenedor derecho y la card se muestren en bloque, debajo del contenido */
+  .hero-card-container {
+    position: static;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .hero-card {
+    position: static;
+    max-width: 100%;
+    width: 90%;
+  }
+}
+
+/* Para pantallas muy pequeñas (móviles pequeños) */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .cta-button {
+    font-size: 1rem;
+    padding: 8px 15px;
+  }
+}

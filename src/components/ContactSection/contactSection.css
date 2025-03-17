@@ -1,0 +1,168 @@
+/* Contenedor principal: 100vh dividido en dos partes */
+.cs-section {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Lado izquierdo (60%): fondo con imagen y blur */
+  .cs-left {
+    position: relative;
+    flex: 0 0 60%;
+    overflow: hidden;
+  }
+  
+  .cs-left-bg {
+    background-image: url('../../../public/images/fondo-contact.jpg'); /* Reemplaza con la ruta real */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .cs-left-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    padding: 0 40px;
+  }
+  
+  /* Títulos y textos en el lado izquierdo */
+  .cs-main-title {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  .cs-subtitle {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #333;
+  }
+  
+  /* Botón de llamado a la acción */
+  .cs-cta {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #00a174;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Lado derecho (40%): fondo negro, textos en blanco */
+  .cs-right {
+    flex: 0 0 40%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+  
+  /* Logo centrado */
+  .cs-logo {
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 50px;
+  }
+  .cs-logo img {
+    max-width: 20%;
+    height: auto;
+  }
+  
+  /* Datos de contacto */
+  .cs-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .cs-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+  }
+  
+  .cs-contact-text h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #00a174;
+  }
+  
+  .cs-contact-text p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+  /* Iconos en color verde */
+  .cs-icon {
+    color: #00a174;
+    font-size: 1.5rem;
+  }
+  
+  /* =================== */
+  /* Media Queries para dispositivos móviles */
+  @media (max-width: 768px) {
+    .cs-section {
+      flex-direction: column;
+      height: auto;
+    }
+    
+    .cs-left,
+    .cs-right {
+      flex: 1 1 100%;
+    }
+    
+    .cs-left-content {
+      padding: 20px;
+    }
+    
+    .cs-main-title {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+    
+    .cs-subtitle {
+      font-size: 1rem;
+      text-align: center;
+    }
+    
+    .cs-cta {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+    
+    .cs-right {
+      padding: 20px;
+    }
+    
+    .cs-logo {
+      margin-bottom: 40px;
+      margin-top: 20px;
+    }
+    .cs-logo img {
+      max-width: 50%;
+    }
+    
+    .cs-contact-info {
+      align-items: flex-start;
+      font-size: 1rem;
+    }
+  }
+  

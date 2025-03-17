@@ -1,0 +1,15 @@
+ body {
+    background-color: black;
+    font-family: "Atkinson Hyperlegible Mono", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.min-h-screen{
+    width: 100%;
+    overflow-x: hidden;
+}

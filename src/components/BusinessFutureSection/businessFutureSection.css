@@ -1,0 +1,74 @@
+/* Contenedor principal del componente */
+.bf-section {
+    background-color: white;
+    color: inherit;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  /* Encabezado */
+  .bf-header {
+    margin-bottom: 40px;
+  }
+  
+  .bf-title {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .bf-subtitle {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  /* Contenedor de las cards */
+  .bf-cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Estilos base para cada card */
+  .bf-card {
+    width: 320px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Icono de la card */
+  .bf-card-icon {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Título de la card */
+  .bf-card-title {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  /* Información de la card */
+  .bf-card-info {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Cards con fondo negro (Card 1 y Card 2) */
+  .bf-card-black {
+    background-color: black;
+    color: white;
+    border: none;
+  }
+  
+  /* Card con fondo blanco (Card 3) */
+  .bf-card-white {
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+  }
+  
