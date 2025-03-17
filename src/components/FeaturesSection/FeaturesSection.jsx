@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import './featuresSection.css';
+import './FeaturesSection.css';
 
 const features = [
   {
