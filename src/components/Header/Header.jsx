@@ -14,7 +14,7 @@ const Header = () => {
         </nav>
       </div>
       <div className="header-right">
-        <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="contact-link">
+        <a href="https://wa.me/525540044508" target="_blank" rel="noopener noreferrer" className="contact-link">
           <button className="contact-button">
             <FaWhatsapp className="whatsapp-icon" />&nbsp;Contáctanos
           </button>

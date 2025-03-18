@@ -21,7 +21,7 @@ const features = [
     ],
     note: "📌 Perfecto para quienes buscan una presencia web sencilla pero efectiva.",
     buttonText: "Contratar PRIME",
-    buttonLink: "#"
+    buttonLink: "https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
   },
   {
     package: "Paquete ELITE",
@@ -41,7 +41,7 @@ const features = [
     ],
     note: "📌 Un equilibrio entre funcionalidad y accesibilidad.",
     buttonText: "Contratar ELITE",
-    buttonLink: "#"
+    buttonLink: "https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
   },
   {
     package: "Paquete MASTER",
@@ -53,15 +53,15 @@ const features = [
       "✅ Certificado SSL.",
       "✅ Optimización SEO.",
       "✅ Dominio y hosting 1 año.",
-      "❌ Integración con APIs externas.",
-      "❌ Mantenimiento incluido.",
+      "✅ Integración con APIs externas.",
+      "✅ Mantenimiento incluido.",
       "❌ Sistema de gestión de contenido (CMS).",
       "❌ Funcionalidades adicionales a medida.",
       "📆 Tiempo de entrega: 3 a 4 Semanas"
     ],
     note: "📌 Ideal para negocios que requieren una web más avanzada y dinámica.",
     buttonText: "Contratar MASTER",
-    buttonLink: "#"
+    buttonLink: "https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
   },
   {
     package: "Paquete ULTIMATE",
@@ -81,7 +81,7 @@ const features = [
     ],
     note: "📌 Para empresas o emprendedores que necesitan un sitio web potente y escalable.",
     buttonText: "Contratar ULTIMATE",
-    buttonLink: "#"
+    buttonLink: "https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
   }
 ];
 
@@ -122,9 +122,7 @@ const FeaturesSection = () => {
             transform: `translate(${translateValue}%, ${translateValue}%)`,
             opacity: progress
           };
-          // Extraer solo el nombre sin "Paquete"
           const packageName = item.package.replace(/^Paquete\s+/i, '');
-          // La segunda card (índice 1) será "black-card", las demás "white-card"
           const cardClass = index === 1 ? "black-card" : "white-card";
           return (
             <div

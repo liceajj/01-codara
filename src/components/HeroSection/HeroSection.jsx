@@ -17,7 +17,7 @@ const HeroSection = () => {
           Webs optimizadas para el éxito de tu negocio.
           </p>
           <a
-            href="https://wa.me/123456789"
+            href="https://wa.me/525540044508"
             target="_blank"
             rel="noopener noreferrer"
           >

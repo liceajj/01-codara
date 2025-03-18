@@ -9,7 +9,16 @@
     box-sizing: border-box;
 }
 
-.min-h-screen{
-    width: 100%;
+.landing-wrapper {
+    max-width: 100%;
     overflow-x: hidden;
-}
+  }
+
+  @media (max-width: 768px) {
+    .features-section {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+    /* Asegúrate de que todos los elementos internos no tengan anchos fijos mayores a 100% */
+  }
+  

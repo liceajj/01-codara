@@ -15,7 +15,7 @@ const ContactSection = () => {
           <p className="cs-subtitle">
             En menos de 30 minutos tendrás una respuesta y en menos de 24 horas, tu cotización.
           </p>
-          <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer">
+          <a href="https://wa.me/525540044508" target="_blank" rel="noopener noreferrer">
             <button className="cs-cta">Quiero cotizar</button>
           </a>
         </div>

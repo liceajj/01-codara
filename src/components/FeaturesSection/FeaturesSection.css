@@ -1,15 +1,11 @@
-/* Contenedor de la sección */
 .features-section {
   position: relative;
   min-height: 100vh;
   background-color: black;
   padding: 40px 20px;
   scroll-snap-align: start;
-
-
 }
 
-/* Contenedor sticky con disposición horizontal */
 .features-container {
   position: sticky;
   top: 0;
@@ -17,27 +13,24 @@
   gap: 20px;
 }
 
-/* Estilos base para todas las cards */
 .feature-card {
   background-color: #1a1a1a;
   border: 1px solid #00a174;
   border-radius: 8px;
   padding: 20px;
-  width: 320px; /* Más ancha */
+  width: 320px; 
   opacity: 0;
   transform: translate(150%, 150%);
   transition: transform 0.8s ease, opacity 0.8s ease,
   background-color 0.3s ease, color 0.3s ease;
   position: relative;
   overflow: hidden;
-  /* Configuramos el layout interno para que el botón se ubique abajo */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 400px; /* Ajusta este valor según el contenido */
+  min-height: 400px; 
 }
 
-/* Hover para invertir el fondo y el color del texto */
 .white-card {
   background-color: white;
   color: black;
@@ -58,12 +51,11 @@
   color: black;
 }
 
-/* Etiqueta: "Paquete" arriba y el nombre en minúsculas abajo */
 .card-label {
   position: absolute;
   top: 10px;
   left: 10px;
-  padding: 8px 20px; /* Mayor padding para hacerla más ancha */
+  padding: 8px 20px; 
   min-width: 150px;
   font-size: 1.8rem;
   font-weight: bold;
@@ -71,7 +63,6 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Etiqueta para white-card */
 .white-card .card-label {
   background-color: black;
   color: white;
@@ -81,7 +72,6 @@
   color: black;
 }
 
-/* Etiqueta para black-card */
 .black-card .card-label {
   background-color: #00a174;
   color: white;
@@ -91,7 +81,6 @@
   color: white;
 }
 
-/* Espaciado para el contenido principal */
 .feature-description,
 .feature-details p,
 .feature-note {
@@ -99,12 +88,10 @@
   margin: 10px 0;
 }
 
-/* Ajustamos el margen superior para que el contenido no quede muy abajo */
 .feature-description {
   margin-top: 100px;
 }
 
-/* Botón base: mismo tamaño, centrado y pegado a la parte inferior */
 .feature-cta {
   width: 80%;
   padding: 10px 20px;
@@ -114,11 +101,10 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 1rem;
   align-self: center;
-  margin-top: auto;  /* Empuja el botón hacia el final del contenedor */
+  margin-top: auto; 
   margin-bottom: 20px;
 }
 
-/* Botón para white-card */
 .white-card .feature-cta {
   background-color: black;
   color: white;
@@ -128,7 +114,6 @@
   color: white;
 }
 
-/* Botón para black-card */
 .black-card .feature-cta {
   background-color: white;
   color: black;
@@ -138,24 +123,23 @@
   color: white;
 }
 
-/* Espaciador para permitir que el scroll continúe */
 .features-scroll-spacer {
   height: 150vh;
-  width: 100%;
-
 }
 
-/* ================= Responsive ================= */
 
-/* Para pantallas medianas (tablet) */
 @media (max-width: 768px) {
   .features-container {
     flex-direction: column;
     align-items: center;
   }
+
+  .features-scroll-spacer {
+    height: 50vh;
+  }
+
   .feature-card {
     width: 90%;
-    /* En móviles podemos omitir la animación de transformación si se desea */
     transform: none;
     opacity: 1;
     margin-bottom: 20px;
@@ -167,6 +151,9 @@
     font-size: 0.9rem;
     margin: 8px 0;
   }
+  .feature-description {
+    margin-top: 100px;
+  }
   .feature-cta {
     width: 100%;
     font-size: 1rem;
@@ -174,11 +161,15 @@
   }
 }
 
-/* Para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
   .features-section {
     padding: 20px 10px;
   }
+
+  .features-scroll-spacer {
+    height: 5vh;
+  }
+  
   .feature-card {
     width: 100%;
     padding: 15px;
@@ -192,6 +183,9 @@
   .feature-details p,
   .feature-note {
     font-size: 0.85rem;
+  }
+  .feature-description {
+    margin-top: 100px;
   }
   .feature-cta {
     padding: 8px 15px;
