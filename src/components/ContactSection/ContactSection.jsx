@@ -9,9 +9,9 @@ const ContactSection = () => {
       <div className="cs-left">
         <div className="cs-left-bg"></div>
         <div className="cs-left-content">
-          <h1 className="cs-main-title">
+          <h2 className="cs-main-title">
             Tu éxito comienza con un clic. Escríbenos ahora.
-          </h1>
+          </h2>
           <p className="cs-subtitle">
             En menos de 30 minutos tendrás una respuesta y en menos de 24 horas, tu cotización.
           </p>

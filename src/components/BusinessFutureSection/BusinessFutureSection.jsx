@@ -7,7 +7,7 @@ const BusinessFutureSection = () => {
   return (
     <section id='negocio' className="bf-section">
       <div className="bf-header">
-        <h1 className="bf-title">TU NEGOCIO, TU FUTURO</h1>
+        <h2 className="bf-title">TU NEGOCIO, TU FUTURO</h2>
         <p className="bf-subtitle">Convierte tu visión en una realidad digital.</p>
       </div>
       <div className="bf-cards-container">

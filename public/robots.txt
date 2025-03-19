@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Allow: /css/
+Allow: /js/
+
+Sitemap: https://codara.com.mx/sitemap.xml
