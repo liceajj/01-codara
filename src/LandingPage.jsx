@@ -8,7 +8,6 @@ import BusinessFutureSection from "./components/BusinessFutureSection/BusinessFu
 
 const LandingPage = () => {
   useEffect(() => {
-    document.title = "Mi Página Web - Potencia tu presencia online";
   }, []);
 
   return (
