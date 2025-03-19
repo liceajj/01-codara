@@ -11,7 +11,7 @@ const Footer = () => {
         </div>
         <div className="ft-divider"></div>
         <div className="ft-right">
-          <a href="https://www.instagram.com/tu_cuenta" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/codara11?utm_source=qr&igsh=MTZqMHRwMXFzdnN3aQ==" target="_blank" rel="noopener noreferrer">
             <FaInstagram className="ft-instagram" />
           </a>
         </div>

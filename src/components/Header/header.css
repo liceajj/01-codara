@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 40px; /* Mayor padding para un header más alto */
+  padding: 30px 40px; 
   min-height: 80px;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .logo {
-  height: 50px; /* Ajusta la altura del logo según lo desees */
+  height: 50px; 
   margin-right: 20px;
 }
 
@@ -25,11 +25,10 @@
 .menu-item {
   color: #00a174;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.5rem;
   transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
-/* Hover para menú: texto blanco y subrayado verde */
 .menu-item:hover {
   color: white;
   border-bottom: 2px solid #00a174;
@@ -49,7 +48,7 @@
   color: black;
   border: none;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 1.5rem;
   border-radius: 4px;
   cursor: pointer;
   display: flex;
@@ -62,10 +61,9 @@
 }
 
 .whatsapp-icon {
-  font-size: 18px;
+  font-size: 1.5rem;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;

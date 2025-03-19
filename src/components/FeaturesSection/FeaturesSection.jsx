@@ -21,7 +21,7 @@ const features = [
     ],
     note: "📌 Perfecto para quienes buscan una presencia web sencilla pero efectiva.",
     buttonText: "Contratar PRIME",
-    buttonLink: "https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
+    buttonLink: "https://wa.me/523343451046?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
   },
   {
     package: "Paquete ELITE",
@@ -41,7 +41,7 @@ const features = [
     ],
     note: "📌 Un equilibrio entre funcionalidad y accesibilidad.",
     buttonText: "Contratar ELITE",
-    buttonLink: "https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
+    buttonLink: "https://wa.me/523343451046?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
   },
   {
     package: "Paquete MASTER",
@@ -61,7 +61,7 @@ const features = [
     ],
     note: "📌 Ideal para negocios que requieren una web más avanzada y dinámica.",
     buttonText: "Contratar MASTER",
-    buttonLink: "https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
+    buttonLink: "https://wa.me/523343451046?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
   },
   {
     package: "Paquete ULTIMATE",
@@ -81,7 +81,7 @@ const features = [
     ],
     note: "📌 Para empresas o emprendedores que necesitan un sitio web potente y escalable.",
     buttonText: "Contratar ULTIMATE",
-    buttonLink: "https://wa.me/1234567890?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
+    buttonLink: "https://wa.me/523343451046?text=Hola,%20estoy%20interesado%20en%20sus%20servicios"
   }
 ];
 

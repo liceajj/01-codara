@@ -52,16 +52,18 @@
     font-size: 0.9rem;
   }
   
-  /* Responsive */
   @media (max-width: 600px) {
     .ft-main {
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
     }
     .ft-divider {
-      display: none;
+      display: block;
+      margin: 0 20px;
     }
-    .ft-left, .ft-right {
-      margin: 10px 0;
+    .ft-left, 
+    .ft-right {
+      margin: 0;
     }
   }
-  

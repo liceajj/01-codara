@@ -8,26 +8,30 @@
     transform: translateX(0);
   }
 }
-
+/* 📌 Sección Principal */
 .hero-section {
   display: flex;
   height: 100vh;
   background-color: black;
   color: white;
   padding: 20px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
+/* 📌 Contenedor del texto */
 .hero-text {
   flex: 1;
   display: flex;
-  align-items: flex-start; 
+  flex-direction: column;
   justify-content: center;
-  padding-top: 40px;
+  align-items: flex-start;
+  padding-left: 40px;
+  margin-top: -160px; /* 🔹 SUBE LOS TÍTULOS */
 }
 
+/* 📌 Animación de los textos */
 .text-container {
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .hero-title {
@@ -47,6 +51,7 @@
   opacity: 0;
 }
 
+/* 📌 Botón */
 .cta-button {
   background-color: #00a174;
   color: black;
@@ -67,89 +72,139 @@
   opacity: 0.8;
 }
 
+/* 🔹 Contenedor de la card */
 .hero-card-container {
   flex: 1;
-  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* 🔹 SUBE LA CARD */
+  padding-top: 30px; /* 🔹 Ajuste fino */
 }
 
+/* 🔹 Card ocupa todo el alto */
 .hero-card {
-  position: absolute;
-  bottom: 120px;
-  right: 20px;
+  width: 100%;
+  max-width: 400px;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #1a1a1a;
-  padding: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* 📌 Imagen dentro de la card */
+.card-image {
+  width: 100%;
+  height: 60%;
   display: flex;
   align-items: center;
-  gap: 20px;
-  border-radius: 8px;
-  max-width: 400px;
+  justify-content: center;
 }
 
-.card-text p {
-  margin: 0;
-  font-size: 1rem;
-  color: white;
-}
-
+/* 📌 Efecto de transición suave al cambiar la imagen */
 .card-image img {
-  width: 120px;
-  height: auto;
-  border-radius: 4px;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  transition: opacity 1s ease-in-out;
 }
 
+/* 📌 Texto debajo de la imagen */
+.card-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+
+/* 📌 RESPONSIVE */
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hero-text {
+    align-items: center;
+    padding: 20px;
+    margin-top: -10px; /* 🔹 Ajuste menor */
+  }
+
+  .hero-title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .cta-button {
+    font-size: 1.2rem;
+  }
+
+  .hero-card-container {
+    height: auto;
+    margin-top: 20px;
+    padding-top: 0;
+  }
+
+  .hero-card {
+    width: 90%;
+    height: auto;
+  }
+}
 
 @media (max-width: 768px) {
   .hero-section {
     flex-direction: column;
     height: auto;
-    padding: 20px 10px;
   }
-  
-  .hero-text {
-    align-items: center;
-    padding-top: 20px;
-  }
-  
+
   .hero-title {
-    font-size: 3.5rem;
-    text-align: center;
+    font-size: 3rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.5rem;
-    text-align: center;
   }
-  
+
   .cta-button {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 10px 20px;
   }
-  
-  .hero-card-container {
-    position: static;
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-  }
-  
+
   .hero-card {
-    position: static;
-    max-width: 100%;
-    width: 90%;
+    width: 100%;
+    max-width: 300px;
   }
 }
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-  
+
   .hero-subtitle {
     font-size: 1.2rem;
   }
-  
+
   .cta-button {
-    font-size: 1rem;
-    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .hero-card {
+    width: 100%;
+    max-width: 250px;
   }
 }
